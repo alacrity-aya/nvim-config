@@ -113,3 +113,17 @@ alias zj="zellij"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+source /opt/clash/script/common.sh && source /opt/clash/script/clashctl.sh && watch_proxy
+export CC=clang
+export CXX=clang++
+
+. "$HOME/.local/bin/env"
+export GDM_LANG=en_US.UTF-8
+export LANG=en_US.UTF-8
+# >>> xmake >>>
+test -f "/home/alacrity/.xmake/profile" && source "/home/alacrity/.xmake/profile"
+# <<< xmake <<<
+alias bear="env -u http_proxy -u https_proxy -u HTTP_PROXY -u HTTPS_PROXY bear"
+
+export EDITOR="nvim"
+export VISUAL="nvim"
